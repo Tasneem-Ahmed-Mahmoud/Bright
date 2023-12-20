@@ -1,0 +1,72 @@
+
+/* //////////////////////////////////service/////////////////////////////////////// */
+
+.service_img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .VIP{
+    background-image: url(../images/services/vipt.jpg) ;
+  }
+  .night{
+    background-image: url(../images/services/nightInTown.jpg);
+  }
+  .airport{
+    background-image: url(../images/services/airport3.jpg) ;
+  }
+  .point{
+    background-image: url(../images/services/point_to_point.jpeg) ;
+  }
+  .prom{
+    background-image: url(../images/services/prom3.jpg) ;
+  }
+  .casino{
+    background-image: url(../images/services/ct.jpg) ;
+  }
+  .limo{
+    background-image: url(../images/services/limoo.jpg) ;
+  }
+  .bookByArea{
+    background-image: url(../images/services/bookByArea.jpg) ;
+  }
+  .travelingWKids{
+    background-image: url(../images/services/travelingWKids.jpg) ;
+  }
+  .wedding{
+    background-image: url(../images/services/wedding1.jpg) ;
+  }
+  
+  .service h1{
+  color: var(--gold-color);
+  }
+  .service h2{
+    text-align: center;
+  }
+  .service .span{
+    color: var(--gold-color);
+  }
+  .service .btn{ 
+    background-color: var(--gold-color);
+    color: var(--text);
+    border: 0px;
+    border-radius: 2px;
+    transition: .5s all ease-in-out;
+  }
+  
+  .service .btn:hover{
+    background-color: var(--text);
+    color: var(--gold-color) ;
+    transform: scale(1.2) ;
+  
+  } 
+  
+  .service .content{
+    background-color: rgb(46, 55, 95,0.7);
+    color: white;
+    font-size: larger;
+  }
+ 
+  
+  

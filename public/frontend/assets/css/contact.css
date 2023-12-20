@@ -1,0 +1,223 @@
+
+/* contact us */
+/* ==========================================================================*/
+.page-section {
+    background: url('../images/bg.jpg') center top no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+  
+  .page-section.md-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .page-section.sm-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .page-section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .page-section.no-padding-top {
+    padding-top: 0;
+  }
+  
+  .page-section.no-padding-bottom {
+    padding-bottom: 0;
+  }
+  
+  .page-section.no-bottom-space {
+    margin-bottom: -70px;
+  }
+  
+  .page-section.light {
+    background-color: #f4f6f7;
+  }
+  
+  .page-section.dark {
+    background-color: #14181c;
+    color: #8e9091;
+  }
+  
+  .page-section.contact:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-section.contact>.container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dark #contact-form .form-control {
+   background-color: rgba(20, 24, 28, 0.8);;
+    border: 1px solid rgba(20, 24, 28, 0);
+    color: #ffffff;
+  }
+  
+  .dark #contact-form .form-control:focus {
+    background: rgba(20, 24, 28, 0.5);
+    border: 1px solid rgba(20, 24, 28, 0.5);
+  }
+  
+  #contact-form textarea.form-control {
+    height: 180px;
+  }
+  
+  #contact-form .alert {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 15px;
+    border-color: #e60000;
+    background-color: #e60000;
+    color: #ffffff;
+  }
+  
+  #contact-form .tooltip {
+    left: 15px !important;
+  }
+  
+  #contact-form .tooltip-inner {
+    border-radius: 0;
+    padding: 10px 20px;
+    background-color: #000000;
+  }
+  
+  #contact-form .tooltip-arrow {
+    border-top-color: #000000;
+  }
+  
+  #contact-form .form-control {
+    height: 40px;
+  }
+  
+  #contact-form .has-icon .form-control {
+    padding-right: 40px;
+  }
+  
+  #contact-form .form-control-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  #contact-form .form-button-submit {
+    max-width: none;
+  }
+  
+  /* Contact info
+    /* ========================================================================== */
+  .contact-info .media .fa {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
+    text-align: center;
+    background-color: #d3d3d3;
+    color: #ffffff;
+  }
+  
+  .contact-info .media-list {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info .media-body {
+    line-height: 22px;
+  }
+  
+  .contact-list .media .fa {
+    min-width: 18px;
+    text-align: center;
+  }
+  
+  .contact-list .media-left {
+    margin-right: 15px;
+  }
+  
+  .contact-list .media-right {
+    margin-left: 15px;
+  }
+  
+  .media-body span {
+    color: var(--text);
+  }
+  
+  /* Contact info
+  /* ========================================================================== */
+  .contact-info .media .fa {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
+    text-align: center;
+    background-color: #d3d3d3;
+    color: #ffffff;
+  }
+  
+  .contact-info .media-list {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info .media-body {
+    line-height: 22px;
+  }
+  
+  .contact-list .media .fa {
+    min-width: 18px;
+    text-align: center;
+  }
+  
+  .contact-list .media-left {
+    margin-right: 15px;
+  }
+  
+  .contact-list .media-right {
+    margin-left: 15px;
+  }
+  
+  .form-button-submit.btn:hover {
+    background-color: var(--secondary);
+  }
+  
+  .form-button-submit.btn {
+    background-color: rgba(20, 24, 28, 0.8);
+  }
+  .form-control-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .form-group.has-icon {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  input::placeholder ,textarea::placeholder {
+    color: var(--text) !important; /* Replace #999 with the color you want */
+  }

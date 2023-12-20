@@ -45,6 +45,9 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{asset('dashboard')}}/assets/js/config.js"></script>
     <!-- Page CSS -->
+
+
+
 <style>
     .text-nowrap {
     white-space: wrap !important;

@@ -46,7 +46,7 @@ function store(MainServiceRequest $request){
     Alert::error('error','Transaction failed: ' . $e->getMessage());
  }
  
-    Alert::toast('stored successfully', 'success');
+    Alert::success('success','stored successfully');
     return to_route('main-services.index');
     
 }

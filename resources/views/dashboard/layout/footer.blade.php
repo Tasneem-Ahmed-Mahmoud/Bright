@@ -14,6 +14,9 @@
 <!-- / Layout wrapper -->
 
 
+    
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->
@@ -49,16 +52,15 @@
     <script src="{{ asset('dashboard') }}/assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
-
-    <!-- Vendors JS -->
-
+   <!-- Place this tag in your head or just before your close body tag. -->
+   <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Main JS -->
     <script src="{{ asset('dashboard') }}/assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script src="{{ asset('dashboard')}}/assets/js/ui-modals.js"></script>
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+ 
   </body>
 </html>
 

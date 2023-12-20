@@ -1,0 +1,269 @@
+/* hero */
+#hero{
+  background: linear-gradient(rgba(48, 48, 59, 0.507),rgba(78,87,212,.438)),url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*  */
+/* about */
+
+.section-title{
+    margin-bottom: 40px;
+    }
+    .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--brand);
+    margin: 16px auto 24px auto;
+    }
+    
+    .section-title p{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .icon-box{
+        width: 70px;
+        height: 70px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(78,87,212,.2);
+        color: var(--brand);
+        font-size: 34px;
+        flex: none;
+    }
+    /* our_fleet */
+
+.our-fleet .title{
+    background-color: var(--primary);
+    color: var(--gold-color);
+    
+  }
+  .our-fleet .content{
+    transition: all .5s ease-in-out;
+  }
+  .our-fleet .content:hover{
+    transform: scale(1.1);
+  }
+  
+  .our-fleet .btn{ 
+    background-color: var(--gold-color);
+    color: var(--text);
+    border: 0px;
+    border-radius: 2px;
+    transition: .5s all ease-in-out;
+  }
+  
+  .our-fleet .btn:hover{
+    background-color: var(--text);
+    color: var(--gold-color);
+    transform: scale(1.2);
+  
+  } 
+
+
+
+  
+
+/* #######################questions######################### */
+.questions-header{
+    color: var(--text);
+    padding-bottom:2rem ;
+  }
+  .accordion-header {
+    background-color: var(--primary);
+    color: var(--text);
+  }
+  
+  .accordion-body {
+    background-color: var(--body-color);
+    color: var(--text);
+  }
+  
+  .accordion-button {
+    position: relative;
+    background-color: var(--primary);
+  
+  }
+  
+  .accordion-icon {
+    color: var(--gold-color);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 99;
+  }
+  
+  
+  
+  /* Icon state when accordion is collapsed (plus) */
+  .accordion-button.collapsed .fas.fa-minus:before {
+    content: '\f067';
+    /* Plus icon from Font Awesome */
+  }
+  
+  .accordion-bright {
+    text-decoration: none;
+    color: var(--gold-color);
+    font-size: bold;
+  }
+  
+  
+  
+  input::placeholder ,textarea::placeholder {
+    color: var(--text-color) !important; /* Replace #999 with the color you want */
+  }
+  
+  
+  /* ###########################################################################################3 */
+  /* testimonials */
+  .testimonials {
+    /* background-color:var(--primary); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*  */
+  
+  .testimonials-wrapper{
+  position: relative;
+  }
+  
+  .testimonials-wrapper #left-icon ,.testimonials-wrapper #right-icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--gold-color);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--text);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+     z-index: 9;
+     box-shadow: 0 3px 6px rgba(0,0,0,.23);
+  }
+  
+  .testimonials-wrapper #left-icon {
+    left: -10px;
+   
+  }
+  .testimonials-wrapper #right-icon {
+    right: -10px;
+  
+  }
+  .testimonials-wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  }
+  .carousel::-webkit-scrollbar{
+    display: none;
+  }
+  .wrapper .carousel :where(.card,.card-img){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  .carousel.no-transition{
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging  .card{
+  cursor: grab;
+  user-select: none;
+  }
+  .carousel .card{
+    scroll-snap-align: start;
+    list-style: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    /* height: 342px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    cursor: pointer;
+    color: var(--text);
+    box-shadow: 0 8px  20px -7px var(--gold-color);
+  }
+  
+  .card-img{
+    width: 90px;
+  height: 90px;
+  
+  border-radius: 50%;
+  }
+  .card-img img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--text);
+  }
+  .card h2{
+    
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px  0 5px;
+  }
+  
+  
+  .card .card-content span{
+    color:#6a6d78;
+    font-size: 12px;
+  }
+  .card p{
+    margin-top: .7rem;
+    font-size: 13px;
+    text-align: center;
+  }
+  .starts i{
+    color: var(--gold-color);
+    font-size: .7rem !important;
+    }
+    .testimonials .content a{
+        color: var(--gold-color);
+        font-size: bold;
+    }
+    .google-icon img{
+        width: 7rem;
+    }
+    .google-review {
+    justify-content: start;
+    }
+
+/* services */
+.car-service-nyc .service__content{
+  transition: all .5s ease-in-out;
+}
+.car-service-nyc .service__content img{
+  height: 25rem;
+}
+.car-service-nyc .service__content  .title{
+  background-color: var(--primary);
+  color: var(--gold-color);
+  padding:  1rem 0;
+  text-align: center;
+  
+}
+.car-service-nyc .service__content:hover{
+  transform: scale(1.1);
+}

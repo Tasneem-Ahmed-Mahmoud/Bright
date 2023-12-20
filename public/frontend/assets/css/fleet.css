@@ -1,0 +1,75 @@
+
+/* car */
+
+.layer {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .layer i {
+    cursor: pointer;
+  }
+  
+  .car_big-img {
+    position: relative;
+    height: 50vh;
+  
+  }
+  .car_small-img .col-2{
+  cursor: pointer;
+  }
+  .car .btn { 
+    background-color: var(--gold-color);
+    color: var(--text);
+    border: 0px;
+    border-radius: 2px;
+    transition: .5s all ease-in-out;
+  }
+  
+  .car  .btn:hover{
+    background-color: var(--text);
+    color: var(--gold-color);
+    transform: scale(1.2);
+  
+  }
+  
+  .fleet_card{
+    box-shadow: 1px 1px 7px var(--extra-color);
+  }
+  .car_small-img {
+  
+    /* position: absolute; */
+  }
+  
+  
+
+  .fleet_list {
+    margin-top: 10px;
+    border-top: 1px solid #eeeeee;
+  
+  }
+  
+  
+  /* right side */
+  .rigt_content h5 {
+    padding-top: 5px;
+    position: relative;
+  }
+  
+  .rigt_content h5::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--gold-color);
+    position: absolute;
+  
+    top: -7px;
+  
+  }
+  
+  
+  

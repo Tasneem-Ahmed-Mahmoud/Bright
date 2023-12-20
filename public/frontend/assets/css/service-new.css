@@ -1,0 +1,144 @@
+ 
+ .banner{
+background:url('../images/_banner.jpg');
+background: linear-gradient(rgba(48, 48, 59, 0.507),rgba(78,87,212,.438)),url('../images/_banner.jpg');
+   
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 17rem;
+padding-bottom: 10rem;
+max-height: auto;
+}
+.bg-gold{
+    background-color: var(--gold-color);
+}
+
+.text-gold{
+    color: var(--gold-color);
+}
+/* services */
+.services .services-title{
+ 
+  color: var(--gold-color)!important;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.services .img{
+  box-shadow: -5px 5px 10px var(--gold-color);
+}
+
+
+/* blogs */
+.blog  .blog-item{
+  background-color: var(--primary);
+}
+
+
+.single-blog ul li ,.blog ul li{
+  padding: 1rem;
+  background-color: var(--gold-color);
+}
+
+.arrow-pointer{
+  /* width: 250px; */
+  height: 50px;
+  background-color :var(--gold-color);
+
+  position: relative;
+
+}
+
+.arrow-pointer::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left:  25px solid var(--body-color);
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+
+}
+
+
+.arrow-pointer::before{
+  content: '';
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+  border-left:  25px solid var(--gold-color);
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+
+}
+.popular-airport-services .content{
+  transition: all .5s ease-in-out;
+}
+.popular-airport-services .content:hover{
+
+background-color: var(--primary);
+
+}
+
+.book-by-area-popular img{
+  height: 25rem;
+  box-shadow: none;
+}
+
+.book-by-area-popular .title{
+  background-color: var(--primary);
+  color: var(--gold-color);
+  padding:  .7rem 0;
+  text-align: center;
+  
+}
+
+.book-by-area-popular{
+  transition: all .5s ease-in-out;
+}
+
+.book-by-area-popular:hover{
+  transform: scale(1.1);
+}
+.service__content img,
+.Brooklyn img{
+  height: 25rem;
+}
+/* services */
+.service__content{
+  transition: all .5s ease-in-out;
+}
+.service__content img{
+  height: 30rem;
+}
+.service__content  .title{
+  background-color: var(--primary);
+  color: var(--gold-color);
+  padding:  1rem 0;
+  text-align: center;
+  
+}
+.service__content:hover{
+  transform: scale(1.1);
+}
+@media (max-width:1200px) {
+  .Brooklyn-area{
+    font-size: 1rem;
+  }
+}
+@media (max-width:900px) {
+  .Brooklyn-area{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:500px) {
+  .Brooklyn-area{
+    font-size: 1rem;
+  }
+}

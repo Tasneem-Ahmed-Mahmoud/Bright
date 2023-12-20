@@ -1,0 +1,142 @@
+
+.nav-top .nav-social i{
+       
+  font-size: 1.5rem !important;
+
+ }
+@media screen and (max-width: 1200px){
+  .navbar .main-btn.btn {
+      font-size: .6rem !important;
+      padding: 6px;
+  }
+  }
+
+  @media screen and (max-width:1000px) {
+    :root{
+    font-size: 13px;
+    }
+       /* navbar */
+       .nav-top a span{
+        font-size: .7rem !important;
+       }
+       .nav-top i{
+       
+        font-size: 1rem !important;
+    
+       }
+       
+    }
+
+
+@media(max-width: 991px) {
+    #hero p{
+        width: 100%!important;
+    }
+
+    :root{
+        font-size: 12px;
+        }
+}
+
+
+@media screen  and (max-width:1197px){
+    .testimonials-wrapper .carousel{
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen  and (max-width:600px){
+    .testimonials-wrapper .carousel{
+        grid-auto-columns: 100% ;
+    }
+  }
+  
+  @media(max-width: 991px) {
+
+    
+  
+  .nav-social a,.nav-top .info a{
+  margin-right: 1rem;
+  }
+    .google-review {
+      justify-content: center !important;
+      }
+      .main-title{
+        font-size: 1rem !important;
+      }
+  
+  .nav-top_content{
+    justify-content: center !important;
+  }
+  .nav-top_content .info{
+    justify-content: space-between !important;
+  }
+  
+      #hero p{
+          width: 100%!important;
+      }
+  
+  
+      :root{
+          font-size: 12px;
+          }
+  }
+
+
+  
+@media screen  and (max-width:1197px){
+  .testimonials-wrapper .carousel{
+      grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+
+@media  screen and (max-width:750px) {
+
+  .nav-social>div {
+    margin-top: .8rem ;
+    /* margin-bottom: .5rem; */
+  }
+  .nav-social a,.nav-top .info a{
+    margin-right: 1.5rem !important;
+    }
+    .nav-top .nav-social span{
+      font-size: 1rem !important;
+    }
+    .nav-top .nav-social i{
+       
+      font-size: 1.5rem !important;
+  
+     }
+ 
+}
+@media screen  and (max-width:600px){
+  .testimonials-wrapper .carousel{
+      grid-auto-columns: 100% ;
+  }
+}
+
+@media  screen and (max-width:991px) {
+  
+}
+
+@media  screen and (max-width:480px) {
+
+  .nav-social a,.nav-top .info a{
+    margin-right: 1.5rem;
+    }
+  .main-title{
+    font-size: 1rem !important;
+  }
+}
+
+  
+  @media  screen and (max-width:480px) {
+    .main-title{
+      font-size: 1rem !important;
+    }
+  }
+  @media screen and  (min-width:760px) and (max-width:1031px ){
+    .footer_down-list li a i{
+        font-size: 1rem!important;
+    }
+  }

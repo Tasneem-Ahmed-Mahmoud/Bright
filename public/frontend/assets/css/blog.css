@@ -1,0 +1,9 @@
+ .banner{
+background:url('../images/_banner.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 17rem;
+padding-bottom: 10rem;
+max-height: auto;
+}

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\SystemController;
 use App\Http\Controllers\Dashboard\ServiceController;
 use App\Http\Controllers\Dashboard\MainServiceController;
 
@@ -15,29 +16,18 @@ use App\Http\Controllers\Dashboard\MainServiceController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.index');
-});
 
 
-
-#################### main service #################################
-Route::controller(MainServiceController::class)->prefix('main-services')->name('main-services.')->group(function () {
-    Route::get('', 'index')->name('index');
-    Route::get('/create', 'create')->name('create');
-    Route::post('/', 'store')->name('store');
-    Route::get('/{main_service}', 'edit')->name('edit');
-    Route::put('/{main_service}', 'update')->name('update');
-    Route::delete('/{main_service}', 'destroy')->name('destroy');
+#################### System #################################
+Route::controller(SystemController::class)->prefix('user')->name('system.')->group(function () {
+    Route::get('/login', 'login')->name('login');
+    Route::get('/register', 'register')->name('register');
+     Route::get('/reservation', 'reservation')->name('reservation');
+      Route::get('/password', 'password')->name('forget');
+       Route::get('/quote', 'quote')->name('quote');
   
 });
-####################  services #################################
-Route::controller(ServiceController::class)->prefix('services')->name('services.')->group(function () {
-    Route::get('/', 'index')->name('index');
-    Route::get('/create', 'create')->name('create');
-    Route::post('/', 'store')->name('store');
-    Route::get('/{service}', 'edit')->name('edit');
-    Route::put('/{service}', 'update')->name('update');
-    Route::delete('/{service}', 'destroy')->name('destroy');
-  
-});
+#################### Main Service#################################
+
+
+

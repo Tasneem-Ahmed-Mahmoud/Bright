@@ -1,0 +1,79 @@
+
+  
+/* /////////////////////////////////services//////////////////////////////////////////////// */
+
+.services{
+    margin-top: 10rem;
+  }
+  .service-title  {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .1rem;
+    color:#e0b145 ;
+  }  
+  .service-title-h{
+    color: #e8d19d;
+    text-align: center;
+    padding-top: 1rem;
+    justify-content: space-around;
+    letter-spacing: .1rem;
+    padding-bottom: 5rem;
+  }
+  
+  .services .icon img {
+    width: 100px;
+    height: 80px;
+    font-size: 3rem;
+  
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .services .content  .btn{ 
+    background-color: var(--gold-color);
+    color: var(--text);
+    border: 0px;
+    border-radius: 2px;
+    transition: .5s all ease-in-out;
+  }
+  
+  .services  .content .btn:hover{
+    background-color: var(--text);
+    color: var(--gold-color);
+    transform: scale(1.2);
+  
+  } 
+  .box{
+    transition: all .5s ease-in-out;
+  }
+  
+  .box:hover{
+    background-color: var(--primary);
+    border-radius: 20px;
+  
+  }
+  .box:hover .content img {
+    border-radius: 1rem;
+  }
+  .box .p-text{
+    color: #777;
+    transition: 0.5s ease-in-out;
+  }
+  .box:hover .h-text , .span{
+    color: var(--gold-color);
+    transition: 0.5s ease-in-out;
+  }
+  .box:hover .p-text{
+    color: white;
+    transition: 0.5s ease-in-out;
+  
+  }
+  
+  @media(max-width:774px){
+    .services  h5{
+      font-size: 1rem !important;
+    }
+  }
