@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Image extends Model
 {
+
     use HasFactory;
+    
+  const PATH = "images/fleets/";
     protected $fillable=['name','alt'];
     public function imageable(): MorphTo
     {

@@ -3,11 +3,12 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Models\Service;
+use App\Models\MainService;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ServiceRequest;
-use App\Models\MainService;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class ServiceController extends Controller
@@ -47,7 +48,7 @@ class ServiceController extends Controller
                 $service->seo()->create([
                     'title' => $request->title,
                     'description' => $request->seo_description,
-                    'url' => $request->url,
+                    'url' => 'services/'.$request->url,
                 ]);
             });
         } catch (\Exception $e) {
@@ -85,7 +86,7 @@ class ServiceController extends Controller
                 $service->seo()->update([
                     'title' => $request->title,
                     'description' => $request->seo_description,
-                    'url' => $request->url,
+                    'url' => $this->handelUrl($request->url)
                 ]);
             });
         } catch (\Exception $e) {
@@ -115,5 +116,14 @@ class ServiceController extends Controller
         Alert::success('success', 'deleted successfully');
 
         return redirect()->back();
+    }
+
+
+    function handelUrl($url){
+        if(Str::contains($url,'services/')){
+            return $url;
+        }else{
+            return 'services/'.$url;
+        }
     }
 }

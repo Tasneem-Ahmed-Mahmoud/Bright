@@ -30,6 +30,7 @@
                 <label for="formFile" class="form-label">Image</label>
                 <input class="form-control mb-2" type="file" id="formFile" name="image">
                 <img src="{{ asset($service::PATH.$service->mainService->name.'/'. $service->image->name) }}" style="width: 5rem;height:5rem">
+               
                 @error('image')
                 <small class="text-danger">{{ $message }}</small>
             @enderror

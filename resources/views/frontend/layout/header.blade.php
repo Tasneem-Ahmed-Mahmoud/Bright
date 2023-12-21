@@ -1,4 +1,8 @@
+
+
+
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -13,14 +17,14 @@
   <title>@yield('title')</title>
 
   <!-- icon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend/assets/images/favicon.png')}}">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('frontend/assets/css/bootstrap.min.css')}}">
   <!-- css -->
   @yield('style')
-  <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/new-style.css')}}">
-  <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+  <link rel="stylesheet" href="{{asset('frontend/assets/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/new-style.css')}}">
+  <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}">
   <script>
       let navBar=document.querySelectorAll('.nav-link');
 let navCollapse=document.querySelector('.navbar-collapse.collapse');
@@ -57,4 +61,4 @@ navBar.forEach((ele )=> {
 
 <body>
 
-  @include('./layouts.nav')
+ 

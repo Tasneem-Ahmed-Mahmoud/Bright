@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\SystemController;
 use App\Http\Controllers\Dashboard\ServiceController;
 use App\Http\Controllers\Dashboard\MainServiceController;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,6 @@ use App\Http\Controllers\Dashboard\MainServiceController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
-
 #################### System #################################
 Route::controller(SystemController::class)->prefix('user')->name('system.')->group(function () {
     Route::get('/login', 'login')->name('login');
@@ -28,6 +26,10 @@ Route::controller(SystemController::class)->prefix('user')->name('system.')->gro
   
 });
 #################### Main Service#################################
+Route::get('/{url}',[HomeController::class,'main_service'])->name('main-service');
+Route::get('/services/{url}',[HomeController::class,'service'])->name('service');
 
 
-
+Route::get('/test',function(){
+    dd('test');
+});

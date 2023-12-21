@@ -2,13 +2,12 @@
  .banner{
 background:url('../images/_banner.jpg');
 background: linear-gradient(rgba(48, 48, 59, 0.507),rgba(78,87,212,.438)),url('../images/_banner.jpg');
-   
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-padding-top: 17rem;
-padding-bottom: 10rem;
-max-height: auto;
+padding-top: 7rem;
+padding-bottom: 7rem;
+min-height: 5rem;
 }
 .bg-gold{
     background-color: var(--gold-color);

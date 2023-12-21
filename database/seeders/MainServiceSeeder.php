@@ -19,7 +19,7 @@ class MainServiceSeeder extends Seeder
             [
                 'name' => 'Limo Service',
                 'description' => "We treat our drivers as a family and not just as partners and we share an excellent personalized relationship with them. We always listen to our drivers and our customers to ensure that all parties (customers and drivers) are happy with our service.",
-                "url" => "decades",
+                "url" => "limo-service",
                 "title" => "limosine services decades and years",
                 "seo_description" => "Luxurious. Comfortable. limousine service in New York. limosine services decades and years, limo service nyc and airport transfer nyc"
             ],
@@ -33,7 +33,7 @@ class MainServiceSeeder extends Seeder
                 Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Newark Liberty International Airport (EWR).
                 
                 Our chauffeurs will track your flight, ensuring an on-time pickup and drop-off for a hassle-free travel experience.",
-                "url" => "services/airport-transfer-nyc",
+                "url" => "sairport-transfer-nyc",
                 "title" => "nyc airport shuttle",
                 "seo_description" => "nyc airporter shuttle"
             ],
@@ -54,7 +54,7 @@ class MainServiceSeeder extends Seeder
                 The cost of point-to-point limousine service varies depending on several factors, such as the distance between the pickup and drop-off locations, the type of vehicle selected, and any additional services or amenities requested by the client.
                 
                 However, many clients find the cost to be reasonable, especially considering the level of comfort, convenience, and peace of mind that the service provides.",
-                "url" => "services/empire-limo-service",
+                "url" => "empire-limo-service",
                 "title" => "point to point",
                 "seo_description" => "Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car service nyc, limo service nyc and airport transfer nyc"
             ],

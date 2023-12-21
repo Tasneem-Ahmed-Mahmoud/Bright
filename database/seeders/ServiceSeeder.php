@@ -26,7 +26,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"tours.jpg",
                     "alt"=>"Sightseeing And Tours",
                     'main_service_id'=>1,
-                    'url'=>"services/sightseeing-and-tours",
+                    'url'=>"sightseeing-and-tours",
                     'title'=>"sightseeing-and-tours",
                     "seo_description"=>"Luxurious. Comfortable. Professional. A premium limousine service in New York. An exceptional experience in your journey with elegance and luxury."
                   ],
@@ -39,7 +39,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"night.jpg",
                     "alt"=>"Night In Town",
                     'main_service_id'=>1,
-                    'url'=>"services/nyc-limo-services",
+                    'url'=>"nyc-limo-services",
                     'title'=>"Night In Town",
                     "seo_description"=>"Luxurious. Comfortable. Professional. A premium limousine service in New York. An exceptional experience in your journey with elegance and luxury."
                   ],
@@ -62,7 +62,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"Travelling with Kids.jpg",
                     "alt"=>"Travelling  With Kids",
                     'main_service_id'=>1,
-                    'url'=>"services/limousine-services-nyc",
+                    'url'=>"limousine-services-nyc",
                     'title'=>"Travelling With Kids",
                     "seo_description"=>"Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car service nyc, limo service nyc and airport transfer nyc"
                   ],
@@ -99,7 +99,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"Hourly.jpg",
                     "alt"=>"Hourly limousine",
                     'main_service_id'=>1,
-                    'url'=>"services/professional-drivers",
+                    'url'=>"professional-drivers",
                     'title'=>"Premier Car and Limo Service in NYC | Decades Car Service NYC",
                     "seo_description"=>"Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car service nyc, limo service nyc and airport transfer nyc"
                   ],
@@ -113,7 +113,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"coasions.jpg",
                     "alt"=>"casonics",
                     'main_service_id'=>1,
-                    'url'=>"services/casinos",
+                    'url'=>"casinos",
                     'title'=>"casinos",
                     "seo_description"=>"Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car service nyc, limo service nyc and airport transfer nyc"
                   ],
@@ -145,7 +145,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"wedding service.jpg",
                     "alt"=>"wedding service",
                     'main_service_id'=>1,
-                    'url'=>"services/nyc-limo",
+                    'url'=>"nyc-limo",
                     'title'=>"Wedding limo service",
                     "seo_description"=>"nyc limo"
                   ],
@@ -160,7 +160,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"Maximize your time.jpg",
                     "alt"=>"Maximize your time",
                     'main_service_id'=>1,
-                    'url'=>"services/limo-service-new-york",
+                    'url'=>"limo-service-new-york",
                     'title'=>"best car service nyc",
                     "seo_description"=>"Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car ,with best car service nyc limo service nyc "
                   ],
@@ -365,7 +365,7 @@ class ServiceSeeder extends Seeder
                 
                   [
                     'name'=>"Washington DC",
-                    'description'=>"ther you’re planning to visit Washington DC for sightseeing or business purposes, our luxurious limousine service will provide you with the ultimate convenience. From airport transportation to exploring the city, enjoy absolute privacy and comfort every step of your ride. Using our limousine service to Washington DC is a great way to enjoy getaway moments with your family. If you’re traveling with children, you can choose specific special services offered on our website. Special child car seats will protect your little ones, offering you a stress-free ride. Additionally, your children will be seated in comfort and safety throughout your journey.
+                    'description'=>"there you’re planning to visit Washington DC for sightseeing or business purposes, our luxurious limousine service will provide you with the ultimate convenience. From airport transportation to exploring the city, enjoy absolute privacy and comfort every step of your ride. Using our limousine service to Washington DC is a great way to enjoy getaway moments with your family. If you’re traveling with children, you can choose specific special services offered on our website. Special child car seats will protect your little ones, offering you a stress-free ride. Additionally, your children will be seated in comfort and safety throughout your journey.
 
                     Aside from providing you with a secure ride to and from any location, our limousine service in Washington DC will help you explore the state without facing any hassles or inconveniences. Be it airport transportation or wedding services; our professionally chauffeured services will make a great difference for those who seek quality and reliability
                     
@@ -373,7 +373,7 @@ class ServiceSeeder extends Seeder
                     "image"=>"Washington.jpg",
                     "alt"=>"Washington.jpg",
                     'main_service_id'=>4,
-                    'url'=>"",
+                    'url'=>"limousine-service-to-washington-DC",
                     'title'=>"Limousine Service to Washington DC",
                     "seo_description"=>"Luxurious. Comfortable. limousine service in New York. An exceptional experience in your journey with luxury car service nyc, limo service nyc and airport transfer nyc"
                   ],
@@ -412,7 +412,7 @@ class ServiceSeeder extends Seeder
                 $res->seo()->create([
                     'title' => $service['title'],
                     'description' => $service['seo_description'],
-                    'url' => $service['url'],
+                    'url' => 'services/'.$service['url'],
                 ]);
             });
         }

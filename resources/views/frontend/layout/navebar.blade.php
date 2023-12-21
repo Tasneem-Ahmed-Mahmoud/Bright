@@ -1,9 +1,10 @@
-{{-- End Header --}}
-@php
-use App\Models\Category;
-  $categories = Category::all()
-@endphp
 
+@php
+  use App\Models\MainService;
+  
+  $mains=MainService::with(['services','services.seo','seo'])->get();
+  
+@endphp
 
   <!-- navbar -->
 <header class="sticky-top navbar-header">
@@ -44,7 +45,7 @@ use App\Models\Category;
         <div class="row v-center">
             <div class="header-item item-left">
                 <div class="logo">
-                    <a href="{{ route('Bright Empire') }}"><img src="{{ asset('assets/images/bright.png') }}" alt="" srcset=""></a>
+                    <a href=""><img src="{{ asset('frontend/assets/images/bright.png') }}" alt="" srcset=""></a>
                 </div>
             </div>
             <!-- menu start here -->
@@ -58,13 +59,52 @@ use App\Models\Category;
                         <div class="mobile-menu-close">&times;</div>
                     </div>
                     <ul class="menu-main">
-                       
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                    
+                        <li class="menu-item-has-children">
+                            <a href="#"> Services <i class="fa fa-angle-down"></i> </a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+
+                               @foreach ( $mains as $main)
+                                   
+
+                               <div class="list-item">
+                                <h4 class="title"><a href="{{ route('main-service',$main->seo->url) }}"class="text-gold">{{ $main->name }}</a></h4>
+                                <ul>
+                                  
+                                    @foreach ($main->services as $service )
+                            
+                                    <li><a href="{{ url( $service->seo->url) }}">{{ $service->name }}</a></li>
+                                    
+                                    @endforeach
+                                     
+                                </ul>
+                               
+                          </div>
+
+
+                               @endforeach
+                            
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item-has-children">
+                            <a href="#">Fleet <i class="fas fa-angle-down"></i></a>
+                            <div class="sub-menu single-column-menu">
+                                <ul>
+                                   <li>fleet</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </nav>
             </div>
             <!-- menu end here -->
             <div class="header-item item-right">
-            <a href="" class="btn btn-brand ms-lg-3 main-btn">Make Reservation</a>
+       <a href="{{ route('system.reservation') }}" class="btn btn-brand ms-lg-3 main-btn">Make Reservation</a>
                 <!-- mobile menu trigger -->
                 <div class="mobile-menu-trigger">
                     <span></span>

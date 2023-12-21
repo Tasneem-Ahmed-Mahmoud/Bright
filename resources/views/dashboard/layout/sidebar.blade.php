@@ -63,63 +63,7 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-      <!-- Dashboards -->
-      <li class="menu-item active ">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons bx bx-home-circle"></i>
-          <div data-i18n="Dashboards">Dashboards</div>
-          <div class="badge bg-danger rounded-pill ms-auto">5</div>
-        </a>
-        <ul class="menu-sub">
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/dashboards-crm.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="CRM">CRM</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-          <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-              <div data-i18n="Analytics">Analytics</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-ecommerce-dashboard.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="eCommerce">eCommerce</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-logistics-dashboard.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="Logistics">Logistics</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-academy-dashboard.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="Academy">Academy</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-        </ul>
-      </li>
-
     
-
-    
-    
-
  {{-- Main Services--}}
  <li class="menu-item  ">
   <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -166,34 +110,34 @@
        
       </ul>
     </li>
-      <!-- Tables -->
-      <li class="menu-item">
-        <a href="tables-basic.html" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-table"></i>
-          <div data-i18n="Tables">Tables</div>
-        </a>
-      </li>
      
-      <!-- Misc -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
-      <li class="menu-item">
-        <a
-          href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-          target="_blank"
-          class="menu-link">
-          <i class="menu-icon tf-icons bx bx-support"></i>
-          <div data-i18n="Support">Support</div>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a
-          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
-          target="_blank"
-          class="menu-link">
-          <i class="menu-icon tf-icons bx bx-file"></i>
-          <div data-i18n="Documentation">Documentation</div>
-        </a>
-      </li>
+     
+     {{-- Fleets --}}
+   
+
+     <li class="menu-item  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <div data-i18n="Dashboards"> fleet</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item ">
+          <a href="{{ route('fleets.index') }}" class="menu-link">
+            <div data-i18n="Analytics">  Fleet</div>
+          </a>
+        </li>
+
+        <li class="menu-item ">
+          <a href="{{ route('fleets.create') }}" class="menu-link">
+            <div data-i18n="Analytics">Add Fleet</div>
+          </a>
+        </li>
+      
+       
+      </ul>
+    </li>
+     
+      
     </ul>
   </aside>
   <!-- / Menu -->

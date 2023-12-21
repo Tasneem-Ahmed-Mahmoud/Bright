@@ -10,8 +10,7 @@
         <div class="col-md-5 col-12 ">
           <div class="">
 
-            <a  href="{{ route('Bright Empire') }}"> <img src="{{asset('assets/images/bright.png')}}" alt="limousin logo" class=" logo"> </a>
-
+           
             <p class="mt-4">
               Bright Empire is a fantastic website that offers a variety of services and resources for individuals and businesses alike. It is the perfect destination for information seekers and those interested in personal and professional development.
             </p>
@@ -76,14 +75,14 @@
    
   
   <!-- jquery -->
-  <script src="{{asset('assets/js/jquery.js')}}"></script>
+  <script src="{{asset('frontend/assets/js/jquery.js')}}"></script>
    
   <!--  Bootstrap  -->
-  <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/js/bootstrap.bundle.min.js')}}"></script>
   <!-- system -->
   <script type="text/javascript" src="https://book.mylimobiz.com/v4/widgets/widget-loader.js"> </script>
  <!-- script js -->
-  <script src="{{asset('assets/js/main-new.js') }}"></script>
+  <script src="{{asset('frontend/assets/js/main-new.js') }}"></script>
 @yield('script')
 </body>
   
