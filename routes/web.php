@@ -16,6 +16,7 @@ use App\Http\Controllers\Frontend\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 #################### System #################################
 Route::controller(SystemController::class)->prefix('user')->name('system.')->group(function () {
     Route::get('/login', 'login')->name('login');
@@ -28,6 +29,7 @@ Route::controller(SystemController::class)->prefix('user')->name('system.')->gro
 #################### Main Service#################################
 Route::get('/{url}',[HomeController::class,'main_service'])->name('main-service');
 Route::get('/services/{url}',[HomeController::class,'service'])->name('service');
+Route::get('/',[HomeController::class,'index'])->name('landing');
 
 
 Route::get('/test',function(){

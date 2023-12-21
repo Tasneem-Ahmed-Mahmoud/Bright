@@ -12,9 +12,7 @@ use App\Http\Controllers\Dashboard\ServiceController;
 use App\Http\Controllers\Dashboard\MainServiceController;
 
 
-Route::get('/test',function(){
-    dd('test');
-});
+
 ####################  Auth #################################
 Route::controller(AuthController::class)->group(function () {   
     Route::get('/profile/login', 'login_form');
@@ -96,7 +94,3 @@ Route::get('/admin', function () {
     return view('dashboard.index');
 })->name('dashboard');
 
-Route::get('/', function () {
-
-    return view('frontend.landing');
-})->name('landing');

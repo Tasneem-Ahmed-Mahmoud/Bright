@@ -24,6 +24,43 @@
 
 
 
+<!-- ######## our-services ########################-->
+
+<section class="our-fleet section-top ">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 ">
+                <h3 class="main-title">SERVICES</h3>
+                <div class="title-line"></div>
+            </div>
+
+            @foreach ( $services as $service)
+                
+          
+            <!-- start -->
+            <div class="col-md-4 col-sm-6 p-2">
+
+                <a href="{{route('service',url_handel($service->seo->url)) }}">
+                    <div class="content">
+                        <figure class="mb-0">
+
+                            <img src="{{ asset($service::PATH.$main_service->name.'/'.$service->image->name) }}" alt="{{ $service->image->alt }}" class="w-100" srcset="" height="300px">
+                        </figure>
+                        <h6 class="title text-center py-3 mt-0">{{ $service->name }}</h6>
+                    </div>
+                </a>
+
+            </div>
+            <!-- end-->
+           
+           
+            @endforeach
+        </div>
+    </div>
+</section>
+
 
 
 
